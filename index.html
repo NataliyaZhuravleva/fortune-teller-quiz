@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Fortune Teller Quiz</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Fortune Teller Quiz</h1>
-      <p>Answer the questions below to receive your fortune. Check all answers that apply.</p>
-    </div>
 
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Fortune Teller Quiz</title>
+</head>
 
+<body>
+  <div class="container">
+    <h1>Fortune Teller Quiz</h1>
+    <p>Answer the questions below to receive your fortune. Check all answers that apply.</p>
+    <form id="fortune-quiz">
+      <div class="form-group">
+        <p>Select each "unlucky" event that has happened to you in the last week:</p>
+        <input type="checkbox" name="unlucky-events" value="mirror">Broke a mirror<br>
+        <input type="checkbox" name="unlucky-events" value="cat">A black cat crossed my path<br>
+        <input type="checkbox" name="unlucky-events" value="ladder">Walked under a ladder<br>
+        <input type="checkbox" name="unlucky-events" value="toe">Stubbed your toe<br>
+      </div>
+      <br>
+      <div class="form-group">
+        <p>Select each "lucky" event that has happened to you in the last week:</p>
+        <input type="checkbox" name="lucky-events" value="clover">Found a 4-leaf clover<br>
+        <input type="checkbox" name="lucky-events" value="rainbow">See a rainbow<br>
+        <input type="checkbox" name="lucky-events" value="bird">Bird pooped on me<br>
+        <input type="checkbox" name="lucky-events" value="cow">Stepped on cow poop<br>
+      </div>
+      <br>
+      <button type="submit" class="button">Submit</button>
+    </form>
+    <br>
+    <span id="unfortune-response">
+      <p><b>Unfortunate-response:</b></p>
+    </span>
+    <span id="fortune-response">
+      <p><b>Your fortune:</b></p>
+    </span>
+    <span id="neutral-response">
+      <p><b>You're just a regular person. Here is your fortune:</b></p>
+    </span>
+    <span id="empty">
+      <p><b>Please choose at least one unlucky event and at least one lucky event.</b></p>
+    </span>
+  </div>
+</body>
 
-
-  </body>
 </html>
