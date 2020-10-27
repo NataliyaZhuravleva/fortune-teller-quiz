@@ -38,15 +38,15 @@ $(document).ready(function () {
       if (unluckyCounter > luckyCounter) {
         counter++;
         $("#unfortune-response").show();
-        $("#unfortune-response").append("You will have many troubles this week. Make sure to carry an umbrella when you go outside.")
+        $("#unfortune-response").text("You will have many troubles this week. Make sure to carry an umbrella when you go outside.")
       } else if (luckyCounter > unluckyCounter) {
         counter++;
         $("#fortune-response").show();
-        $("#fortune-response").append("You will have great fortune in the coming weeks. Place large bets and you will win.")
+        $("#fortune-response").text("You will have great fortune in the coming weeks. Place large bets and you will win.")
       } else if (luckyCounter === unluckyCounter) {
         counter++;
         $("#neutral-response").show();
-        $("#neutral-response").append("You are doing alright. Just keep swimming.")
+        $("#neutral-response").text("You are doing alright. Just keep swimming.")
       }
 
     } else $("#empty").show();
